@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Onnin eka HTML Page</title>
+    <style>
+      h1 {
+        color: green;
+      }
+      p {
+        color: blue;
+      }
+
+      body {
+        background-color: lightgray;
+      }
+
+      h1 {
+        font-size: 2em;
+      }
+
+      .content-box {
+        padding: 30px;
+        margin: 10px;
+        background-color: #f0f0f0;
+        border: 1px solid #ccc;
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+
+      th,
+      td {
+        border: 1px solid #0a0707;
+        padding: 8px;
+        text-align: left;
+      }
+
+      th {
+        background-color: #f2f2f2;
+      }
+      form {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      label {
+        font-weight: bold;
+      }
+
+      input[type="text"],
+      input[type="email"] {
+        padding: 8px;
+        border: 1px solid #0c0404;
+        border-radius: 4px;
+      }
+
+      input[type="submit"] {
+        background-color: #4caf50;
+        color: white;
+        padding: 10px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+
+      input[type="submit"]:hover {
+        background-color: #45a049;
+      }
+    
+    .transition-button {
+        background-color: lightblue;
+        padding: 10px 20px;
+        border: none;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+      
+      .transition-button:hover {
+        background-color: lightcoral;
+      }
+   
+   .animation-box {
+        width: 50px;
+        height: 50px;
+        background-color: lightgreen;
+        position: relative;
+        animation: move 2s infinite alternate;
+      }
+      
+      @keyframes move {
+        from {
+          left: 0;
+        }
+        to {
+          left: 100px;
+        }
+      }
+  
+  .pseudo-list li:nth-child(odd) {
+        background-color: lightgray;
+      }
+      
+      .pseudo-list li:nth-child(even) {
+        background-color: white;
+      }
+  
+  .filter-image {
+        filter: grayscale(100%);
+        transition: filter 0.3s ease;
+      }
+      
+      .filter-image:hover {
+        filter: grayscale(0%);
+      }
+  
+  .quote {
+        position: relative;
+        padding-left: 20px;
+        font-style: italic;
+      }
+      
+      .quote::before {
+        content: '“';
+        font-size: 40px;
+        position: absolute;
+        left: 0;
+        top: 0;
+        color: lightgray;
+      }
+  </style>
+  </head>
+  <body>
+    <h1>Welcome to my Page</h1>
+    <p>This is a paragraph.</p>
+    <img src="./images/meikä.jpg" alt="Kuvalinkki on rikki" />
+
+    <h2>Ordered List</h2>
+    <ol>
+      <li>Kuntosali</li>
+      <li>Lenkkeily</li>
+      <li>Pyöräily</li>
+    </ol>
+
+    <h2>Unordered List</h2>
+    <ul>
+      <li>Kuntosali</li>
+      <li>Lenkkeily</li>
+      <li>Pyöräily</li>
+    </ul>
+    <a href="https://www.youtube.com/">Youtube</a>
+
+    <table>
+      <tr>
+        <th>Kurssi</th>
+        <th>Aihe</th>
+      </tr>
+      <tr>
+        <td>IT taidot</td>
+        <td>HTML ja CSS</td>
+      </tr>
+      <tr>
+        <td>Row 2, Cell 1</td>
+        <td>Row 2, Cell 2</td>
+      </tr>
+    </table>
+
+    <h1 style="color: red">This is a heading</h1>
+    <form>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" /><br /><br />
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" /><br /><br />
+      <input type="submit" value="Submit" />
+    </form>
+  </body>
+  <link rel="stylesheet" href="styles.css" />
+  <div class="content-box">
+    <h3>Sample Heading</h3>
+    <p>This is a sample paragraph inside a div element.</p>
+  </div>
+</html>
+
+<button class="transition-button">Hover me</button>
+
+<div class="animation-box"></div>
+
+<ul class="pseudo-list">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+      </ul>
+
+      <img src="./images/meikä.jpg" alt="Sample Image" class="filter-image">
+
+      <blockquote class="quote">
+        Elämä on ihmisen parasta aikaa
+      </blockquote>
